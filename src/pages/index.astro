@@ -1,16 +1,393 @@
+
 ---
+const skills = [
+  "Python",
+  "JavaScript",
+  "Django",
+  "FastAPI",
+  "Flask",
+  "React",
+  "RAG & LLMs",
+  "LangChain",
+  "LangGraph",
+  "PostgreSQL",
+  "Docker",
+  "Google Cloud",
+];
+
+const projects = [
+  {
+    name: "FinQuery",
+    category: "AI / RAG",
+    description:
+      "A financial retrieval system combining semantic search, BM25, and LLM-based query routing across 207 financial documents.",
+    stack: "FastAPI · ChromaDB · OpenAI · RAGAS",
+    result: "Recall@3 improved from 40% to 76%",
+    link: "https://github.com/nandypi",
+  },
+  {
+    name: "QPtool",
+    category: "Backend Engineering",
+    description:
+      "A production-grade question bank management application that automates examination data workflows.",
+    stack: "Django · PostgreSQL · Docker · Google Cloud",
+    result: "Automated manual Excel-based workflows",
+    link: "https://github.com/nandypi",
+  },
+  {
+    name: "TCS2Seek",
+    category: "Data Engineering",
+    description:
+      "A data processing platform that validates Excel datasets and converts examination data into SEEK-compatible JSON.",
+    stack: "Flask · Pandas · Firebase · Google Cloud Storage",
+    result: "Reliable data validation and media processing",
+    link: "https://github.com/nandypi",
+  },
+];
+
+const experience = [
+  {
+    role: "Web Development Intern",
+    company: "NPTEL, IIT Madras",
+    period: "Jan 2025 – Jul 2026",
+    description:
+      "Built and maintained production backend applications, designed REST APIs, and automated examination paper creation workflows.",
+  },
+  {
+    role: "Mentor & Teaching Assistant",
+    company: "IIT Madras BS Degree Program",
+    period: "Sep 2024 – Jun 2026",
+    description:
+      "Mentored students, led application development bootcamps, and helped students learn Python and application development.",
+  },
+];
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    <meta
+      name="description"
+      content="Nandan Reddy — Software Developer & AI/ML Engineer. I build production software, backend systems, and AI-powered applications."
+    />
+    <meta name="theme-color" content="#0b0d12" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Nandan Reddy — Software Developer & AI/ML Engineer</title>
+  </head>
+
+  <body>
+    <header class="site-header">
+      <a class="logo" href="#home">NR<span>.</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a class="nav-contact" href="mailto:parnapalli2004@gmail.com">
+          Contact ↗
+        </a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section" id="home">
+        <div class="hero-content">
+          <p class="eyebrow">
+            <span class="status-dot"></span>
+            SOFTWARE DEVELOPER · AI/ML ENGINEER
+          </p>
+
+          <h1>
+            Building software.<br />
+            <span>Engineering intelligence.</span>
+          </h1>
+
+          <p class="hero-description">
+            I'm Nandan Reddy, a software developer passionate about building
+            reliable backend systems, useful products, and AI-powered
+            applications.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">
+              Explore my work <span>↗</span>
+            </a>
+            <a
+              class="button button-secondary"
+              href="https://github.com/nandypi"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub ↗
+            </a>
+          </div>
+
+          <div class="hero-links">
+            <a
+              href="https://www.linkedin.com/in/nandanreddyp"
+              target="_blank"
+              rel="noreferrer"
+            >LinkedIn ↗</a>
+            <span>·</span>
+            <a href="mailto:parnapalli2004@gmail.com">Email me ↗</a>
+          </div>
+        </div>
+
+        <aside class="hero-card">
+          <div class="card-top">
+            <span>BUILD.LOG</span>
+            <span class="live-dot"></span>
+          </div>
+          <div class="code-window">
+            <p><span class="code-muted">01</span> <span class="code-purple">const</span> developer = &#123;</p>
+            <p class="indent"><span class="code-blue">name</span>: <span class="code-green">"Nandan Reddy"</span>,</p>
+            <p class="indent"><span class="code-blue">focus</span>: [</p>
+            <p class="indent2"><span class="code-green">"Software Engineering"</span>,</p>
+            <p class="indent2"><span class="code-green">"Artificial Intelligence"</span>,</p>
+            <p class="indent2"><span class="code-green">"Building useful products"</span></p>
+            <p class="indent">],</p>
+            <p class="indent"><span class="code-blue">mindset</span>: <span class="code-green">"Build. Learn. Improve."</span></p>
+            <p>&#125;;</p>
+            <p class="code-comment">// Always shipping, always learning.</p>
+          </div>
+          <div class="card-bottom">
+            <span>AVAILABLE FOR OPPORTUNITIES</span>
+            <span class="availability-dot"></span>
+          </div>
+        </aside>
+      </section>
+
+      <div class="ticker" aria-label="Areas of expertise">
+        <div>PYTHON <span>✳</span> BACKEND SYSTEMS <span>✳</span> AI / ML <span>✳</span> REST APIS <span>✳</span> RAG & LLMs <span>✳</span> CLOUD <span>✳</span></div>
+      </div>
+
+      <section class="section content-section" id="about">
+        <div class="section-heading">
+          <p class="eyebrow">01 / ABOUT</p>
+          <h2>Engineering with <span>purpose.</span></h2>
+        </div>
+        <div class="about-content">
+          <p class="about-lead">
+            I enjoy turning complex problems into software that people can
+            actually use.
+          </p>
+          <p class="body-copy">
+            My experience includes developing production-grade web
+            applications at NPTEL, IIT Madras, building APIs and data
+            processing workflows, and exploring retrieval-augmented
+            generation systems. I enjoy working across the stack and
+            bringing AI capabilities into practical applications.
+          </p>
+          <div class="stats">
+            <div><strong>207</strong><span>Financial documents in FinQuery</span></div>
+            <div><strong>76%</strong><span>FinQuery Recall@3</span></div>
+            <div><strong>50+</strong><span>Students supported in Python</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section content-section" id="skills">
+        <div class="section-heading">
+          <p class="eyebrow">02 / TOOLKIT</p>
+          <h2>Technologies I <span>work with.</span></h2>
+        </div>
+        <div class="skills-grid">
+          {skills.map((skill) => <span class="skill">{skill}</span>)}
+        </div>
+      </section>
+
+      <section class="section content-section" id="projects">
+        <div class="section-heading">
+          <p class="eyebrow">03 / SELECTED WORK</p>
+          <h2>Things I've <span>built.</span></h2>
+          <p class="section-description">
+            A selection of software and AI projects focused on practical
+            problems, reliability, and measurable results.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          {projects.map((project, index) => (
+            <article class="project-card">
+              <div class="project-top">
+                <span class="project-number">0{index + 1}</span>
+                <span class="project-category">{project.category}</span>
+              </div>
+              <h3>{project.name}</h3>
+              <p class="project-description">{project.description}</p>
+              <p class="project-stack">{project.stack}</p>
+              <div class="project-result">{project.result}</div>
+              <a
+                class="project-link"
+                href={project.link}
+                target="_blank"
+                rel="noreferrer"
+              >View on GitHub ↗</a>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section class="section content-section" id="experience">
+        <div class="section-heading">
+          <p class="eyebrow">04 / EXPERIENCE</p>
+          <h2>Where I've <span>contributed.</span></h2>
+        </div>
+        <div class="timeline">
+          {experience.map((job) => (
+            <article class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <p class="timeline-period">{job.period}</p>
+                <h3>{job.role}</h3>
+                <p class="timeline-company">{job.company}</p>
+                <p class="body-copy">{job.description}</p>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <p class="eyebrow">05 / LET'S CONNECT</p>
+        <h2>Have an interesting<br /><span>problem to solve?</span></h2>
+        <p class="body-copy">
+          I'm interested in software engineering, AI-powered products, and
+          opportunities to build useful technology with good teams.
+        </p>
+        <a class="button button-primary" href="mailto:parnapalli2004@gmail.com">
+          Let's talk <span>↗</span>
+        </a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="logo" href="#home">NR<span>.</span></a>
+      <p>Designed & built by Nandan Reddy.</p>
+      <a href="#home">Back to top ↑</a>
+      <span class="copyright">© {new Date().getFullYear()} Nandan Reddy</span>
+    </footer>
+  </body>
 </html>
+
+<style>
+  :global(*) { box-sizing: border-box; }
+  :global(html) { scroll-behavior: smooth; scroll-padding-top: 90px; }
+  :global(body) {
+    margin: 0;
+    background: #0b0d12;
+    color: #eceef4;
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  :global(a) { color: inherit; text-decoration: none; }
+  :global(a:focus-visible) { outline: 2px solid #a5b4fc; outline-offset: 4px; }
+  :global(::selection) { background: #b5a6ff; color: #0b0d12; }
+  .site-header {
+    position: sticky; top: 0; z-index: 10;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 20px max(6%, calc((100% - 1120px) / 2));
+    border-bottom: 1px solid #ffffff0d;
+    background: #0b0d12eF;
+    backdrop-filter: blur(16px);
+  }
+  .logo { font-size: 24px; font-weight: 850; letter-spacing: -1.5px; }
+  .logo span { color: #a99aff; }
+  nav { display: flex; align-items: center; gap: 28px; color: #a4a8b7; font-size: 13px; }
+  nav a:hover, .hero-links a:hover, .site-footer a:hover { color: #c2b8ff; }
+  .nav-contact { border: 1px solid #353744; padding: 8px 13px; border-radius: 7px; color: #f2f1fa; }
+  .section { width: min(100% - 48px, 1080px); margin-inline: auto; }
+  .hero {
+    min-height: 590px; padding-block: 105px 100px;
+    display: grid; grid-template-columns: 1.3fr .7fr; align-items: center; gap: 64px;
+  }
+  .eyebrow { color: #a99aff; font-size: 11px; letter-spacing: 2px; font-weight: 750; }
+  .hero .eyebrow { display: flex; align-items: center; gap: 10px; }
+  .status-dot, .live-dot, .availability-dot {
+    display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: #81d8a1;
+  }
+  h1 { font-size: clamp(42px, 5.4vw, 66px); line-height: 1.1; letter-spacing: -3.6px; margin: 25px 0; font-weight: 800; }
+  h1 span, h2 span { color: #a99aff; }
+  .hero-description { max-width: 530px; color: #a4a8b7; font-size: 16px; line-height: 1.9; }
+  .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+  .button { display: inline-flex; justify-content: center; align-items: center; gap: 14px; padding: 12px 18px; border-radius: 7px; font-size: 13px; font-weight: 700; transition: transform .2s, background .2s; }
+  .button:hover { transform: translateY(-2px); }
+  .button-primary { background: #b8aaff; color: #11101a; }
+  .button-primary:hover { background: #c8bdff; }
+  .button-secondary { border: 1px solid #353744; }
+  .hero-links { display: flex; gap: 12px; align-items: center; margin-top: 28px; color: #9297a7; font-size: 12px; }
+  .hero-card { background: #11141c; border: 1px solid #262a37; border-radius: 12px; overflow: hidden; box-shadow: 0 25px 100px #0003; }
+  .card-top, .card-bottom { display: flex; justify-content: space-between; align-items: center; padding: 14px 18px; color: #747a8e; font-size: 9px; letter-spacing: 1.4px; }
+  .card-top { border-bottom: 1px solid #ffffff0b; }
+  .code-window { padding: 24px 16px 30px; font: 11px/2.3 ui-monospace, SFMono-Regular, Consolas, monospace; color: #d9dbea; overflow-x: auto; }
+  .code-window p { margin: 0; white-space: nowrap; }
+  .indent { padding-left: 18px; } .indent2 { padding-left: 35px; }
+  .code-muted, .code-comment { color: #6f7589; }
+  .code-purple { color: #c2a6ff; } .code-blue { color: #8dc9ff; } .code-green { color: #a8d9ad; }
+  .card-bottom { border-top: 1px solid #ffffff0b; font-size: 8px; }
+  .ticker { overflow: hidden; border-block: 1px solid #ffffff12; background: #10121a; white-space: nowrap; }
+  .ticker div { width: max-content; padding: 17px 0; animation: drift 35s linear infinite; color: #9da2b2; font-size: 10px; letter-spacing: 2px; }
+  .ticker span { color: #a99aff; padding-inline: 25px; }
+  @keyframes drift { to { transform: translateX(-35%); } }
+  .content-section { padding-block: 95px; border-bottom: 1px solid #ffffff12; }
+  .section-heading { margin-bottom: 38px; }
+  h2 { font-size: clamp(30px, 4vw, 44px); line-height: 1.2; letter-spacing: -1.8px; margin: 10px 0; }
+  .about-content { max-width: 760px; }
+  .about-lead { font-size: 21px; line-height: 1.65; color: #e5e4ef; }
+  .body-copy { color: #999eaf; font-size: 14px; line-height: 1.9; }
+  .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 35px; }
+  .stats div { display: flex; flex-direction: column; gap: 5px; }
+  .stats strong { font-size: 28px; letter-spacing: -1px; }
+  .stats span { color: #8f94a5; font-size: 11px; }
+  .skills-grid { display: flex; flex-wrap: wrap; gap: 10px; }
+  .skill { padding: 10px 15px; border: 1px solid #292d3a; background: #11141b; border-radius: 6px; color: #c5c8d4; font-size: 12px; }
+  .section-description { max-width: 530px; color: #969bac; font-size: 14px; }
+  .projects-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+  .project-card { display: flex; flex-direction: column; align-items: flex-start; padding: 25px; background: #11141b; border: 1px solid #272b37; border-radius: 9px; transition: border-color .2s, transform .2s; }
+  .project-card:hover { border-color: #7666bc; transform: translateY(-3px); }
+  .project-top { display: flex; justify-content: space-between; width: 100%; align-items: center; }
+  .project-number { color: #a99aff; font-size: 12px; }
+  .project-category { color: #969bad; font-size: 10px; border: 1px solid #303342; padding: 4px 8px; border-radius: 20px; }
+  .project-card h3 { margin: 24px 0 4px; font-size: 23px; }
+  .project-description { color: #a1a5b4; font-size: 13px; line-height: 1.8; }
+  .project-stack { color: #b7aaff; font-size: 11px; line-height: 1.8; }
+  .project-result { margin-top: 12px; color: #a9dcb7; font-size: 11px; }
+  .project-link { margin-top: 24px; padding-top: 14px; width: 100%; border-top: 1px solid #ffffff12; color: #e2deff; font-size: 12px; }
+  .timeline { max-width: 760px; }
+  .timeline-item { display: grid; grid-template-columns: 14px 1fr; gap: 22px; padding-bottom: 35px; }
+  .timeline-marker { width: 9px; height: 9px; margin-top: 7px; border-radius: 50%; background: #a99aff; box-shadow: 0 0 0 5px #a99aff1a; }
+  .timeline-period { margin: 0; color: #a99aff; font-size: 11px; }
+  .timeline-content h3 { margin: 6px 0 0; font-size: 19px; }
+  .timeline-company { margin: 2px 0 8px; color: #c4c6d1; font-size: 13px; }
+  .contact-section { padding-block: 100px; text-align: center; }
+  .contact-section .body-copy { max-width: 490px; margin: 20px auto 25px; }
+  .contact-section h2 { font-size: clamp(36px, 5vw, 54px); }
+  .site-footer { width: min(100% - 48px, 1080px); margin: auto; padding-block: 25px; display: flex; gap: 24px; align-items: center; flex-wrap: wrap; }
+  .site-footer p, .site-footer > a:not(.logo), .copyright { font-size: 11px; color: #858a9a; }
+  .site-footer p { flex: 1; }
+  @media (max-width: 760px) {
+    .site-header { padding: 16px 24px; }
+    nav { gap: 14px; }
+    nav a:not(.nav-contact) { display: none; }
+    .section { width: min(100% - 40px, 600px); }
+    .hero { grid-template-columns: 1fr; gap: 42px; padding-block: 80px 65px; min-height: auto; }
+    h1 { letter-spacing: -2.4px; }
+    .hero-card { max-width: 440px; width: 100%; }
+    .content-section { padding-block: 70px; }
+    .projects-grid { grid-template-columns: 1fr; }
+    .stats { gap: 12px; }
+    .stats strong { font-size: 24px; }
+    .stats span { font-size: 10px; }
+    .site-footer { gap: 12px 20px; }
+    .site-footer p { flex-basis: calc(100% - 70px); }
+    .copyright { width: 100%; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    :global(html) { scroll-behavior: auto; }
+    .ticker div { animation: none; }
+    .button, .project-card { transition: none; }
+  }
+</style>
